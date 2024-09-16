@@ -8,11 +8,11 @@ export default function Menu() {
 
                 <div className="w-[500px] h-full ml-auto">
                     <ul className="w-full h-full flex items-center justify-center list-none">
-                        <li className="mx-7 text-slate-950 font-bold text-md cursor-pointer transition-all hover:text-[#01D6A3]">Home</li>
-                        <li className="mx-7 text-slate-950 font-bold text-md cursor-pointer transition-all hover:text-[#01D6A3]">Sobre</li>
-                        <li className="mx-7 text-slate-950 font-bold text-md cursor-pointer transition-all hover:text-[#01D6A3]">Serviços</li>
-                        <li className="mx-7 text-slate-950 font-bold text-md cursor-pointer transition-all hover:text-[#01D6A3]">Preço</li>
-                        <li className="mx-7 text-slate-950 font-bold text-md cursor-pointer transition-all hover:text-[#01D6A3]">Contato</li>
+                        <li className="mx-7 text-slate-950 font-black text-md cursor-pointer transition-all hover:text-[#01D6A3]">Home</li>
+                        <li className="mx-7 text-slate-950 font-black text-md cursor-pointer transition-all hover:text-[#01D6A3]">Sobre</li>
+                        <li className="mx-7 text-slate-950 font-black text-md cursor-pointer transition-all hover:text-[#01D6A3]">Serviços</li>
+                        <li className="mx-7 text-slate-950 font-black text-md cursor-pointer transition-all hover:text-[#01D6A3]">Preço</li>
+                        <li className="mx-7 text-slate-950 font-black text-md cursor-pointer transition-all hover:text-[#01D6A3]">Contato</li>
                     </ul>
                 </div>
 
