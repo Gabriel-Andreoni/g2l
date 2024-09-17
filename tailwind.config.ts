@@ -13,6 +13,15 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
     },
+    screens: {
+      'mobile': '380px',
+
+      'laptop': '768px',
+
+      'desktop': '1025px',
+
+      'ultra-wide': '1920px',
+    }
   },
   plugins: [],
 };
