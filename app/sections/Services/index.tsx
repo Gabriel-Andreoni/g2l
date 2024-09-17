@@ -1,6 +1,10 @@
 import Image from "next/image";
 import cardImage1 from './img/services-card-image-1.png';
 import cardImage2 from './img/services-card-image-2.png';
+import cardImage3 from './img/services-card-image-3.png';
+import cardImage4 from './img/services-card-image-4.png';
+import cardImage5 from './img/services-card-image-5.png';
+
 
 export default function Services() {
     return (
@@ -20,38 +24,38 @@ export default function Services() {
                             </div>
                             <div className="w-full flex flex-col gap-2">
                                 <h2 className="text-center font-bold">Desenvolvimento de Sites</h2>
-                                <p className="mb-4 text-center font-medium text-[#636B6E]">Criação de websites sob medida, responsivos e otimizados para SEO, garantindo uma excelente performance e visibilidade nos motores de busca.</p>
+                                <p className="mb-4 text-center  text-[#636B6E] text-md">Sites personalizados e responsivos, otimizados para SEO, com design focado na melhor performance e visibilidade online.</p>
                             </div>
                         </div>
 
                         <div className="w-3/6 p-3 flex flex-col gap-4 shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#01D6A3]">
                             <div className="w-full mt-4 flex justify-center">
-                                <Image src={cardImage2} alt="imagem de uma tela em construção" width="97" height="100" />
+                                <Image src={cardImage5} alt="imagem de uma tela em construção" width="97" height="100" />
                             </div>
                             <div className="w-full flex flex-col gap-2 shadow-[0px 0px 20px 0px rgba(0, 0, 0, 0.1)]">
-                                <h2 className="text-center font-bold">Desenvolvimento de Aplicativos</h2>
-                                <p className="mb-4 text-center font-medium text-[#636B6E]">Apps nativos e híbridos para Android e iOS, com design intuitivo e funcionalidades avançadas, focados nas necessidades do seu negócio.</p>
+                                <h2 className="text-center font-bold text-pretty">Desenvolvimento de Sites em WordPress</h2>
+                                <p className="mb-4 text-center text-[#636B6E] text-md">Sites dinâmicos e fáceis de gerenciar, utilizando WordPress. Responsivos e otimizados para melhorar sua presença digital.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="w-full flex gap-4">
-                    <div className="w-1/4 p-3 flex flex-col gap-4 shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#01D6A3]">
+                    <div className="w-1/4 p-3 flex flex-col gap-4 bg-[#01D6A3] shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#033B4A]">
                         <div className="w-full mt-4 flex justify-center">
-                            <Image src={cardImage2} alt="imagem de uma tela em construção" width="97" height="100" />
+                            <Image src={cardImage3} alt="imagem de uma tela em construção" width="97" height="100" />
                         </div>
                         <div className="w-full flex flex-col gap-2 shadow-[0px 0px 20px 0px rgba(0, 0, 0, 0.1)]">
-                            <h2 className="text-center font-bold">Manutenção e Suporte</h2>
-                            <p className="mb-4 text-center font-medium text-[#636B6E]">Oferecemos manutenção contínua para garantir que seu site ou aplicativo esteja sempre atualizado e funcionando perfeitamente.</p>
+                            <h2 className="text-center font-bold text-white">Desenvolvimento de Aplicativos</h2>
+                            <p className="mb-4 text-center  text-white text-md">Apps nativos e híbridos para Android e iOS, com design intuitivo e funcionalidades avançadas, alinhados às suas necessidades.</p>
                         </div>
                     </div>
                     <div className="w-1/4 p-3 flex flex-col gap-4 shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#01D6A3]">
                         <div className="w-full mt-4 flex justify-center">
-                            <Image src={cardImage2} alt="imagem de uma tela em construção" width="97" height="100" />
+                            <Image src={cardImage4} alt="imagem de uma tela em construção" width="97" height="100" />
                         </div>
                         <div className="w-full flex flex-col gap-2 shadow-[0px 0px 20px 0px rgba(0, 0, 0, 0.1)]">
-                            <h2 className="text-center font-bold">Manutenção e Suporte</h2>
-                            <p className="mb-4 text-center font-medium text-[#636B6E]">Oferecemos manutenção contínua para garantir que seu site ou aplicativo esteja sempre atualizado e funcionando perfeitamente.</p>
+                            <h2 className="text-center font-bold">Consultoria Digital</h2>
+                            <p className="mb-4 text-center  text-[#636B6E] text-md">Orientação estratégica para melhorar sua presença digital, desde o planejamento até a execução de soluções tecnológicas.</p>
                         </div>
                     </div>
 
@@ -61,7 +65,7 @@ export default function Services() {
                         </div>
                         <div className="w-full flex flex-col gap-2 shadow-[0px 0px 20px 0px rgba(0, 0, 0, 0.1)]">
                             <h2 className="text-center font-bold">Manutenção e Suporte</h2>
-                            <p className="mb-4 text-center font-medium text-[#636B6E]">Oferecemos manutenção contínua para garantir que seu site ou aplicativo esteja sempre atualizado e funcionando perfeitamente.</p>
+                            <p className="mb-4 text-center text-[#636B6E] text-md">Manutenção contínua para garantir que seu site ou aplicativo esteja sempre atualizado e funcionando perfeitamente.</p>
                         </div>
                     </div>
 
