@@ -10,15 +10,15 @@ export default function Services() {
     return (
         <section className="w-full h-screen">
             <div className="max-w-7xl h-full mx-auto py-28 flex flex-col gap-4">
-                <div className="w-full flex">
-                    <div className="w-3/6 p-4 flex flex-col items-start justify-center">
+                <div className="w-full flex desktop:flex-row mobile:flex-col">
+                    <div className="desktop:w-3/6 mobile:w-full p-4 flex flex-col items-start justify-center">
                         <h6 className="mb-1 text-[#01D6A3] text-xl font-black">Nossos serviços</h6>
                         <h2 className="mb-8 text-4xl text-[#033B4A] font-black">Soluções Digitais sob Medida para o Seu Sucesso</h2>
                         <p className="w-11/12 font-medium text-[#636B6E]">Na G2L, oferecemos soluções digitais inovadoras e personalizadas para o seu negócio. Criamos sites e aplicativos que unem design moderno e funcionalidade, focados em resultados.</p>
                     </div>
 
-                    <div className="w-3/6 pl-2 flex gap-4">
-                        <div className="w-3/6 p-3 flex flex-col gap-4 shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#01D6A3]">
+                    <div className="desktop:w-3/6 mobile:w-full pl-2 flex desktop:flex-row mobile:flex-col gap-4">
+                        <div className="desktop:w-3/6 mobile:w-11/12 mobile:mx-auto mobile:ml-2 p-3 flex flex-col gap-4 shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#01D6A3]">
                             <div className="w-full mt-4 flex justify-center">
                                 <Image src={cardImage1} alt="imagem de uma tela em construção" width="97" height="100" />
                             </div>
@@ -28,7 +28,7 @@ export default function Services() {
                             </div>
                         </div>
 
-                        <div className="w-3/6 p-3 flex flex-col gap-4 shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#01D6A3]">
+                        <div className="desktop:w-3/6 mobile:w-11/12 mobile:mx-auto mobile:ml-2 p-3 flex flex-col gap-4 shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#01D6A3]">
                             <div className="w-full mt-4 flex justify-center">
                                 <Image src={cardImage5} alt="imagem de uma tela em construção" width="97" height="100" />
                             </div>
@@ -39,9 +39,9 @@ export default function Services() {
                         </div>
                     </div>
                 </div>
-                <div className="w-full flex gap-4">
-                    <div className="w-1/4 p-3 flex flex-col gap-4 bg-[#01D6A3] shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#033B4A]">
-                        <div className="w-full mt-4 flex justify-center">
+                <div className="w-full flex desktop:flex-row mobile:flex-col gap-4">
+                    <div className="desktop:w-3/6 mobile:w-11/12 mobile:mx-auto mobile:ml-2 p-3 flex flex-col gap-4 bg-[#01D6A3] shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#033B4A]">
+                        <div className="w-full  mt-4 flex justify-center">
                             <Image src={cardImage3} alt="imagem de uma tela em construção" width="97" height="100" />
                         </div>
                         <div className="w-full flex flex-col gap-2 shadow-[0px 0px 20px 0px rgba(0, 0, 0, 0.1)]">
@@ -49,7 +49,7 @@ export default function Services() {
                             <p className="mb-4 text-center  text-white text-md">Apps nativos e híbridos para Android e iOS, com design intuitivo e funcionalidades avançadas, alinhados às suas necessidades.</p>
                         </div>
                     </div>
-                    <div className="w-1/4 p-3 flex flex-col gap-4 shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#01D6A3]">
+                    <div className="desktop:w-3/6 mobile:w-11/12 mobile:mx-auto mobile:ml-2 p-3 flex flex-col gap-4 shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#01D6A3]">
                         <div className="w-full mt-4 flex justify-center">
                             <Image src={cardImage4} alt="imagem de uma tela em construção" width="97" height="100" />
                         </div>
@@ -59,7 +59,7 @@ export default function Services() {
                         </div>
                     </div>
 
-                    <div className="w-1/4 p-3 flex flex-col gap-4 shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#01D6A3]">
+                    <div className="desktop:w-3/6 mobile:w-11/12 mobile:mx-auto mobile:ml-2 p-3 flex flex-col gap-4 shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#01D6A3]">
                         <div className="w-full mt-4 flex justify-center">
                             <Image src={cardImage2} alt="imagem de uma tela em construção" width="97" height="100" />
                         </div>
@@ -69,7 +69,7 @@ export default function Services() {
                         </div>
                     </div>
 
-                    <div className="w-1/4 p-3 flex justify-center items-center">
+                    <div className="desktop:w-1/4 mobile:w-full p-3 flex justify-center items-center">
                         <button className="w-4/5 p-6 bg-[#01D6A3] text-white z-50 font-[500] transition-all hover:bg-[#033b4a] hover:text-[#01D6A3] hover:shadow-[10px_10px_1px_#01D6A3]">Entre em contato</button>
                     </div>
                 </div>
