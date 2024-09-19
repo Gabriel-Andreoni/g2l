@@ -33,3 +33,9 @@
     font-variant-caps: all-small-caps;
     font-weight: 900;
 }
+
+@media (width <= 769px) {
+    .hero-container {
+        background-position: 70%;
+    }
+}
