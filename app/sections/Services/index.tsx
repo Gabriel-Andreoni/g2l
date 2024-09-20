@@ -8,7 +8,7 @@ import cardImage5 from './img/services-card-image-5.png';
 
 export default function Services() {
     return (
-        <section className="w-full h-screen">
+        <section className="w-full h-auto">
             <div className="max-w-7xl h-full mx-auto py-28 flex flex-col gap-4">
                 <div className="w-full flex desktop:flex-row mobile:flex-col">
                     <div className="desktop:w-3/6 mobile:w-full p-4 flex flex-col items-start justify-center">
@@ -40,7 +40,7 @@ export default function Services() {
                     </div>
                 </div>
                 <div className="w-full flex desktop:flex-row mobile:flex-col  gap-4">
-                    <div className="desktop:w-3/6 mobile:w-11/12 mobile:mx-auto p-3 flex flex-col gap-4 bg-[#01D6A3] shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#033B4A]">
+                    <div className="desktop:w-1/4 mobile:w-11/12 mobile:mx-auto p-3 flex flex-col gap-4 bg-[#01D6A3] shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#033B4A]">
                         <div className="w-full  mt-4 flex justify-center">
                             <Image src={cardImage3} alt="imagem de uma tela em construção" width="97" height="100" />
                         </div>
@@ -49,7 +49,7 @@ export default function Services() {
                             <p className="mb-4 text-center  text-white text-md">Apps nativos e híbridos para Android e iOS, com design intuitivo e funcionalidades avançadas, alinhados às suas necessidades.</p>
                         </div>
                     </div>
-                    <div className="desktop:w-3/6 mobile:w-11/12 mobile:mx-auto p-3 flex flex-col gap-4 shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#01D6A3]">
+                    <div className="desktop:w-1/4 mobile:w-11/12 mobile:mx-auto p-3 flex flex-col gap-4 shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#01D6A3]">
                         <div className="w-full mt-4 flex justify-center">
                             <Image src={cardImage4} alt="imagem de uma tela em construção" width="97" height="100" />
                         </div>
@@ -59,7 +59,7 @@ export default function Services() {
                         </div>
                     </div>
 
-                    <div className="desktop:w-3/6 mobile:w-11/12 mobile:mx-auto p-3 flex flex-col gap-4 shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#01D6A3]">
+                    <div className="desktop:w-1/4 mobile:w-11/12 mobile:mx-auto p-3 flex flex-col gap-4 shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#01D6A3]">
                         <div className="w-full mt-4 flex justify-center">
                             <Image src={cardImage2} alt="imagem de uma tela em construção" width="97" height="100" />
                         </div>
