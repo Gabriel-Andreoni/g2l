@@ -14,11 +14,11 @@ export default function Services() {
                     <div className="desktop:w-3/6 mobile:w-full p-4 flex flex-col items-start justify-center">
                         <h6 className="mb-1 text-[#01D6A3] text-xl font-black">Nossos serviços</h6>
                         <h2 className="mb-8 text-4xl text-[#033B4A] font-black">Soluções Digitais sob Medida para o Seu Sucesso</h2>
-                        <p className="w-11/12 font-medium text-[#636B6E]">Na G2L, oferecemos soluções digitais inovadoras e personalizadas para o seu negócio. Criamos sites e aplicativos que unem design moderno e funcionalidade, focados em resultados.</p>
+                        <p className="desktop:w-11/12 mobile:w-full font-medium text-[#636B6E]">Na G2L, oferecemos soluções digitais inovadoras e personalizadas para o seu negócio. Criamos sites e aplicativos que unem design moderno e funcionalidade, focados em resultados.</p>
                     </div>
 
-                    <div className="desktop:w-3/6 mobile:w-full pl-2 flex desktop:flex-row mobile:flex-col gap-4">
-                        <div className="desktop:w-3/6 mobile:w-11/12 mobile:mx-auto mobile:ml-2 p-3 flex flex-col gap-4 shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#01D6A3]">
+                    <div className="desktop:w-3/6 mobile:w-full desktop:pl-2 flex desktop:flex-row mobile:flex-col gap-4">
+                        <div className="desktop:w-3/6 mobile:w-11/12 mobile:mx-auto p-3 flex flex-col gap-4 shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#01D6A3]">
                             <div className="w-full mt-4 flex justify-center">
                                 <Image src={cardImage1} alt="imagem de uma tela em construção" width="97" height="100" />
                             </div>
@@ -28,7 +28,7 @@ export default function Services() {
                             </div>
                         </div>
 
-                        <div className="desktop:w-3/6 mobile:w-11/12 mobile:mx-auto mobile:ml-2 p-3 flex flex-col gap-4 shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#01D6A3]">
+                        <div className="desktop:w-3/6 mobile:w-11/12 mobile:mx-auto p-3 flex flex-col gap-4 shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#01D6A3]">
                             <div className="w-full mt-4 flex justify-center">
                                 <Image src={cardImage5} alt="imagem de uma tela em construção" width="97" height="100" />
                             </div>
@@ -39,8 +39,8 @@ export default function Services() {
                         </div>
                     </div>
                 </div>
-                <div className="w-full flex desktop:flex-row mobile:flex-col gap-4">
-                    <div className="desktop:w-3/6 mobile:w-11/12 mobile:mx-auto mobile:ml-2 p-3 flex flex-col gap-4 bg-[#01D6A3] shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#033B4A]">
+                <div className="w-full flex desktop:flex-row mobile:flex-col  gap-4">
+                    <div className="desktop:w-3/6 mobile:w-11/12 mobile:mx-auto p-3 flex flex-col gap-4 bg-[#01D6A3] shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#033B4A]">
                         <div className="w-full  mt-4 flex justify-center">
                             <Image src={cardImage3} alt="imagem de uma tela em construção" width="97" height="100" />
                         </div>
@@ -49,7 +49,7 @@ export default function Services() {
                             <p className="mb-4 text-center  text-white text-md">Apps nativos e híbridos para Android e iOS, com design intuitivo e funcionalidades avançadas, alinhados às suas necessidades.</p>
                         </div>
                     </div>
-                    <div className="desktop:w-3/6 mobile:w-11/12 mobile:mx-auto mobile:ml-2 p-3 flex flex-col gap-4 shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#01D6A3]">
+                    <div className="desktop:w-3/6 mobile:w-11/12 mobile:mx-auto p-3 flex flex-col gap-4 shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#01D6A3]">
                         <div className="w-full mt-4 flex justify-center">
                             <Image src={cardImage4} alt="imagem de uma tela em construção" width="97" height="100" />
                         </div>
@@ -59,7 +59,7 @@ export default function Services() {
                         </div>
                     </div>
 
-                    <div className="desktop:w-3/6 mobile:w-11/12 mobile:mx-auto mobile:ml-2 p-3 flex flex-col gap-4 shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#01D6A3]">
+                    <div className="desktop:w-3/6 mobile:w-11/12 mobile:mx-auto p-3 flex flex-col gap-4 shadow-[0px_0px_20px_0px_#00000019] transition duration-500 hover:shadow-[10px_10px_1px_#01D6A3]">
                         <div className="w-full mt-4 flex justify-center">
                             <Image src={cardImage2} alt="imagem de uma tela em construção" width="97" height="100" />
                         </div>
