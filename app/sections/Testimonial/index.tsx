@@ -4,7 +4,7 @@ import TestimonialsCover from './img/testimonials-cover.jpg'
 
 export default function Testimonial() {
     return (
-        <section className="mt-28 h-screen">
+        <section className="mt-28 h-screen relative overflow-hidden after:content-[''] after:w-4/12 desktop:after:h-4/6 mobile:after:h-2/6 after:block after:absolute after:top-16 after:-right-28 after:bg-[#01D6A3] after:z-[-1]">
             <div className="max-w-7xl h-full mx-auto py-28 flex">
                 <div className="w-3/6 flex flex-col">
                     <div className="w-full flex flex-col">
