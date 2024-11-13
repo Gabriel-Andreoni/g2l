@@ -17,7 +17,7 @@ export default function Menu() {
             <div className="w-full h-full flex items-center justify-center relative  mobile:justify-start">
                 <div className="w-48 h-full flex items-center justify-center mobile:justify-start">
                     <Link href="https://www.g2l.tech/">
-                        <Image className="cursor-pointer transition-all hover:-rotate-90" src={Logo} alt="logo da empresa" width="140" height="100" />
+                        <Image className="cursor-pointer transition-all hover:-rotate-90" src={Logo} alt="logo da empresa" width="100" height="100" />
                     </Link>
                 </div>
 
