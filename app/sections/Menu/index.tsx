@@ -13,7 +13,7 @@ import MenuImage from './img/menu.png';
 export default function Menu() {
     const [isActive, setIsActive] = useState<boolean>(false);
     return (
-        <header className="w-full h-24 bg-white flex  items-center relative">
+        <header className="w-full h-24 mobile:fixed mobile:z-[10000] desktop:static tablet:static bg-white flex  items-center relative">
             <div className="w-full h-full flex items-center justify-center relative  mobile:justify-start">
                 <div className="w-48 h-full flex items-center justify-center mobile:justify-start">
                     <Link href="https://www.g2l.tech/">
