@@ -5,7 +5,9 @@ import { useState } from "react";
 import './styles.css'
 
 import Image from "next/image";
+import Link from "next/link";
 
+import Logo from './img/gl2-logo.png';
 import MenuImage from './img/menu.png';
 
 export default function Menu() {
@@ -14,7 +16,9 @@ export default function Menu() {
         <header className="w-full h-24 bg-white flex  items-center relative">
             <div className="w-full h-full flex items-center justify-center relative  mobile:justify-start">
                 <div className="w-48 h-full flex items-center justify-center mobile:justify-start">
-                    logo
+                    <Link href="https://www.g2l.tech/">
+                        <Image className="cursor-pointer transition-all hover:-rotate-90" src={Logo} alt="logo da empresa" width="140" height="100" />
+                    </Link>
                 </div>
 
                 <nav className={`menu-container mx-auto mobile:hidden tablet:block desktop:block ultra-wide:block ${isActive ? 'active' : ''}`}>
