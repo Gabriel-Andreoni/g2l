@@ -17,13 +17,13 @@ export default function Menu() {
             <div className="w-full h-full flex items-center justify-center relative  mobile:justify-start">
                 <div className="w-48 h-full flex items-center justify-center mobile:justify-start">
                     <Link href="https://www.g2l.tech/">
-                        <Image className="cursor-pointer transition-all hover:-rotate-90" src={Logo} alt="logo da empresa" width="100" height="100" />
+                        <Image className="cursor-pointer transition-all hover:-rotate-90" src={Logo} alt="logo da empresa" width="130" height="100" />
                     </Link>
                 </div>
 
                 <nav className={`menu-container mx-auto mobile:hidden tablet:block desktop:block ultra-wide:block ${isActive ? 'active' : ''}`}>
                     <div className="w-[500px] h-full ml-auto">
-                        <ul className="w-full h-full flex items-center justify-center list-none">
+                        <ul className="w-full h-full flex items-center desktop:justify-center mobile:items-start list-none">
                             <li className="mx-7 text-slate-950 font-medium text-md cursor-pointer transition-all hover:text-[#01D6A3]">Home</li>
                             <li className="mx-7 text-slate-950 font-medium text-md cursor-pointer transition-all hover:text-[#01D6A3]">Sobre</li>
                             <li className="mx-7 text-slate-950 font-medium text-md cursor-pointer transition-all hover:text-[#01D6A3]">Serviços</li>
