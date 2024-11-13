@@ -3,6 +3,7 @@ import Image from 'next/image';
 import TestimonialsCover from './img/testimonials-cover.jpg'
 
 export default function Testimonial() {
+     
     return (
         <section className="mt-28 desktop:h-screen mobile:h-auto relative overflow-hidden after:content-[''] after:w-4/12 desktop:after:h-4/6 after:block after:absolute  after:bg-[#01D6A3] after:z-[-1] desktop:after:top-16 desktop:after:left-[80%] mobile:after:h-60 mobile:after:left-0 mobile:after:top-0">
             <div className="max-w-7xl h-full mx-auto mobile:p-4 desktop:py-28 flex desktop:flex-row mobile:flex-col">
