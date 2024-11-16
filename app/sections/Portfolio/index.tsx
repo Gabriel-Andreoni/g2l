@@ -41,7 +41,7 @@ export default function Portfolio() {
                 <ul className="w-full flex flex-wrap gap-4">
                     {projectsCovers.map((project, index) => {
                         return (
-                            <li key={index}>
+                            <li className="transition-all hover:bg-[#033b4a] hover:text-[#01D6A3] hover:shadow-[10px_10px_1px_#033b4a]"key={index}>
                                 <Link href={project.url} target="_blank" rel="no-follow">
                                     <Image className="w-[400px] h-[200px]" src={project.cover} alt="Projetos realizados pela G2L" />
                                 </Link>
