@@ -6,8 +6,8 @@ export function Prices() {
                 <h2 className="text-4xl font-black text-[#033b4a]">Investimento que Impulsiona o Seu Sucesso</h2>
             </div>
 
-            <div className="w-full my-8 flex gap-1 justify-center items-center ">
-                <div className="w-[30%] flex flex-col p-6 shadow-2xl">
+            <div className="w-full my-8 flex mobile:flex-col desktop:gap-1 mobile:gap-16 justify-center items-center ">
+                <div className="desktop:w-[30%] flex flex-col p-6 shadow-2xl">
                     <div className="mb-4 text-center">
                         <h3 className="text-2xl font-black text-[#033b4a]">Desenvolvimento de Aplicativos</h3>
                         <span className="flex flex-col text-xl">
@@ -31,7 +31,7 @@ export function Prices() {
                     <button className="w-60 mx-auto mt-6 p-4 bg-[#01D6A3] text-white font-medium transition-all hover:bg-[#033b4a] hover:text-[#01D6A3] hover:shadow-[10px_10px_1px_#01D6A3]">Saiba Mais</button>
                 </div>
 
-                <div className="w-[30%] -mt-10 flex flex-col p-6 shadow-2xl bg-[#01D6A3]">
+                <div className="desktop:w-[30%] -mt-10 flex flex-col p-6 shadow-2xl bg-[#01D6A3]">
                     <div className="mb-4 text-center">
                         <h3 className="text-2xl font-black text-[#033b4a]">Desenvolvimento de Sites</h3>
                         <span className="flex flex-col text-xl">
@@ -52,9 +52,9 @@ export function Prices() {
                         </ul>
                     </div>
 
-                    <button className="w-60 mx-auto mt-6 p-4 text-white bg-[#033b4a] font-medium transition-all hover:text-[#01D6A3]">Saiba Mais</button>
+                    <button className="w-60 mx-auto desktop:mt-6 p-4 text-white bg-[#033b4a] font-medium transition-all hover:text-[#01D6A3]">Saiba Mais</button>
                 </div>
-                <div className="w-[30%] flex flex-col p-6 shadow-2xl">
+                <div className="desktop:w-[30%] flex flex-col p-6 mobile:mb-16 shadow-2xl">
                     <div className="mb-4 text-center">
                         <h3 className="text-2xl font-black text-[#033b4a]">Desenvolvimento de Sites em WordPress</h3>
                         <span className="flex flex-col text-xl">
