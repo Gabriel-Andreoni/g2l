@@ -1,3 +1,8 @@
+'use client';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+
 interface PriceProps {
     name: string,
     price: string,
@@ -13,7 +18,7 @@ const services: PriceProps[] = [
         description: 'Aplicativo para Android ou iOS, com até 3 funcionalidades principais.',
         features: [
             'Aplicativos nativos ou híbridos para Android e iOS.',
-            'Integração com APIs e funcionalidades avançadas, como pagamentos, geolocalização e notificações.',
+            'Integração com APIs e funcionalidades avançadas.',
             'Suporte inicial após o lançamento.'
         ],
     },
@@ -25,8 +30,7 @@ const services: PriceProps[] = [
         features: [
             'Design personalizado alinhado à identidade visual do cliente.',
             'Otimização para motores de busca (SEO).',
-            'Integração com ferramentas como Google Analytics, redes sociais e formulários de contato.'
-        ],
+            'Integração com ferramentas como Google Analytics        ],
         primary: true,
     },
 
@@ -51,38 +55,47 @@ export function Prices() {
                 <h2 className="text-4xl font-black text-[#033b4a]">Investimento que Impulsiona o Seu Sucesso</h2>
             </div>
 
-            <ul className="w-full my-8 flex desktop:flex-row mobile:flex-col desktop:gap-1 mobile:gap-16 justify-center items-center ">
-                {services.map((service, index) => {
-                    return (
-                        <li key={index} className={`desktop:w-[30%] flex flex-col p-6 shadow-2xl ${service.primary ? '-mt-8 bg-[#01D6A3]': ''}`}>
+            <ul className="w-full h-screen my-8 flex desktop:flex-row mobile:flex-col justify-center items-center ">
+                <Swiper
+                    slidesPerView={3}
+                >
+                    {services.map((service, index) => {
+                        return (
+                            <SwiperSlide
+                                key={index}
+                                className="w-[30%] h-full"
+                                >
+                                <li className={`desktop:w-[100%] h-full flex flex-col p-6 shadow-[0px_5px_15px_0px_rgba(0,0,0,0.3)] ${service.primary ? 'bg-[#01D6A3]' : ''}`}>
 
-                            <div className="mb-4 text-center">
-                                <h3 className="text-2xl font-black text-[#033b4a]">{service.name}</h3>
-                                <span className="flex flex-col text-xl">
-                                    <p className={`w-[200px] text-center mt-6 text-sm ${service.primary ? 'text-white' : 'text-[#636B6E]'} font-medium`}>a partir de</p>
-                                    <p className={`mt-2 text-4xl font-black text-[#01D6A3] ${service.primary ? 'text-white' : 'text-[#01D6A3]'}`}>{service.price}</p>
-                                </span>
-                            </div>
+                                    <div className="mb-4 text-center">
+                                        <h3 className="text-xl font-black text-[#033b4a]">{service.name}</h3>
+                                        <span className="flex flex-col text-xl">
+                                            <p className={`w-[200px] text-center mt-6 text-sm ${service.primary ? 'text-white' : 'text-[#636B6E]'} font-medium`}>a partir de</p>
+                                            <p className={`mt-2 text-4xl font-black text-[#01D6A3] ${service.primary ? 'text-white' : 'text-[#01D6A3]'}`}>{service.price}</p>
+                                        </span>
+                                    </div>
 
-                            <hr className="my-8" />
+                                    <hr className="my-8" />
 
-                            <div className="w-full text-center">
-                                <h5 className={`${service.primary ? 'text-white' : 'text-[#636B6E]'}`}>{service.description}</h5>
+                                    <div className="w-full text-center">
+                                        <h5 className={`${service.primary ? 'text-white' : 'text-[#636B6E]'}`}>{service.description}</h5>
 
-                                <ul className="w-full mx-auto mt-4 p-4 flex flex-col gap-4 text-left list-disc">
-                                    {service.features.map((feature, index) => {
-                                        return (
-                                            <li key={index} className={`${service.primary ? 'text-white' : 'text-[#636B6E]'} font-medium text-pretty`}>{feature}</li>
-                                        )
-                                    })}
-                                </ul>
-                            </div>
+                                        <ul className="w-full mx-auto mt-4 p-4 flex flex-col gap-4 text-left list-disc">
+                                            {service.features.map((feature, index) => {
+                                                return (
+                                                    <li key={index} className={`${service.primary ? 'text-white' : 'text-[#636B6E]'} font-medium text-pretty`}>{feature}</li>
+                                                )
+                                            })}
+                                        </ul>
+                                    </div>
 
-                            <button className={`w-60 mx-auto mt-6 p-4 font-medium transition-all ${service.primary ? 'bg-[#033b4a] text-white  hover:bg-[#033b4a] hover:text-[#01D6A3] hover:shadow-[10px_10px_1px_#fff]' : 'bg-[#033b4a] text-white  hover:bg-[#033b4a] hover:text-[#01D6A3] hover:shadow-[10px_10px_1px_#01D6A3]'}`}>Saiba Mais</button>
+                                    <button className={`w-60 mx-auto mt-6 p-4 font-medium transition-all ${service.primary ? 'bg-[#033b4a] text-white  hover:bg-[#033b4a] hover:text-[#01D6A3] hover:shadow-[10px_10px_1px_#fff]' : 'bg-[#033b4a] text-white  hover:bg-[#033b4a] hover:text-[#01D6A3] hover:shadow-[10px_10px_1px_#01D6A3]'}`}>Saiba Mais</button>
 
-                        </li>
-                    )
-                })}
+                                </li>
+                            </SwiperSlide>
+                        )
+                    })}
+                </Swiper>
             </ul>
         </section>
     );
