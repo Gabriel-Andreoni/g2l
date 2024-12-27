@@ -13,7 +13,7 @@ interface PriceProps {
 
 const services: PriceProps[] = [
     {
-        name: 'Desenvolvimento de Aplicativos',
+        name: 'Desenvolvimento de Aplicativos para Android e iOS',
         price: 'R$ 8.000,00',
         description: 'Aplicativo para Android ou iOS, com até 3 funcionalidades principais.',
         features: [
@@ -24,13 +24,14 @@ const services: PriceProps[] = [
     },
 
     {
-        name: 'Desenvolvimento de Sites',
+        name: 'Desenvolvimento de Sites Personalizados',
         price: 'R$ 2.000,00',
         description: 'Site com até 5 páginas, design personalizado e SEO inicial.',
         features: [
             'Design personalizado alinhado à identidade visual do cliente.',
             'Otimização para motores de busca (SEO).',
-            'Integração com ferramentas como Google Analytics        ],
+            'Integração com ferramentas como Google Analytics',
+        ],
         primary: true,
     },
 
@@ -49,7 +50,7 @@ const services: PriceProps[] = [
 
 export function Prices() {
     return (
-        <section className="flex flex-col items-center justify-center min-h-screen p-4">
+        <section className="flex flex-col items-center justify-center h-auto p-4">
             <div className="mb-12 text-center">
                 <h1 className="text-2xl font-black text-[#01D6A3]">Nossos Preços</h1>
                 <h2 className="text-4xl font-black text-[#033b4a]">Investimento que Impulsiona o Seu Sucesso</h2>
@@ -63,12 +64,12 @@ export function Prices() {
                         return (
                             <SwiperSlide
                                 key={index}
-                                className="w-[30%] h-full"
+                                className="w-[30%] h-full shadow-lg"
                                 >
-                                <li className={`desktop:w-[100%] h-full flex flex-col p-6 shadow-[0px_5px_15px_0px_rgba(0,0,0,0.3)] ${service.primary ? 'bg-[#01D6A3]' : ''}`}>
+                                <li className={`desktop:w-[100%] h-full flex flex-col p-6  ${service.primary ? 'bg-[#01D6A3]' : ''}`}>
 
                                     <div className="mb-4 text-center">
-                                        <h3 className="text-xl font-black text-[#033b4a]">{service.name}</h3>
+                                        <h3 className="text-2xl text-pretty font-black text-[#033b4a]">{service.name}</h3>
                                         <span className="flex flex-col text-xl">
                                             <p className={`w-[200px] text-center mt-6 text-sm ${service.primary ? 'text-white' : 'text-[#636B6E]'} font-medium`}>a partir de</p>
                                             <p className={`mt-2 text-4xl font-black text-[#01D6A3] ${service.primary ? 'text-white' : 'text-[#01D6A3]'}`}>{service.price}</p>
