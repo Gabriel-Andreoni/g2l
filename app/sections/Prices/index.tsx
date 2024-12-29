@@ -1,7 +1,4 @@
-'use client';
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+import Link from "next/link";
 
 interface PriceProps {
     name: string,
@@ -44,7 +41,7 @@ const services: PriceProps[] = [
             'Ferramentas de fácil gerenciamento para atualizações do site.',
             'Opção de blogs, lojas virtuais ou portfólios.'
         ]
-    }
+    },
 ];
 
 
@@ -56,47 +53,44 @@ export function Prices() {
                 <h2 className="text-4xl font-black text-[#033b4a]">Investimento que Impulsiona o Seu Sucesso</h2>
             </div>
 
-            <ul className="w-full h-screen my-8 flex desktop:flex-row mobile:flex-col justify-center items-center ">
-                <Swiper
-                    slidesPerView={3}
-                >
-                    {services.map((service, index) => {
-                        return (
-                            <SwiperSlide
-                                key={index}
-                                className="w-[30%] h-full shadow-lg"
-                                >
-                                <li className={`desktop:w-[100%] h-full flex flex-col p-6  ${service.primary ? 'bg-[#01D6A3]' : ''}`}>
+            <ul className="w-full h-screen my-8 flex flex-wrap gap-8 desktop:flex-row mobile:flex-col justify-start items-center">
 
-                                    <div className="mb-4 text-center">
-                                        <h3 className="text-2xl text-pretty font-black text-[#033b4a]">{service.name}</h3>
-                                        <span className="flex flex-col text-xl">
-                                            <p className={`w-[200px] text-center mt-6 text-sm ${service.primary ? 'text-white' : 'text-[#636B6E]'} font-medium`}>a partir de</p>
-                                            <p className={`mt-2 text-4xl font-black text-[#01D6A3] ${service.primary ? 'text-white' : 'text-[#01D6A3]'}`}>{service.price}</p>
-                                        </span>
-                                    </div>
+                {services.map((service, index) => {
+                    return (
 
-                                    <hr className="my-8" />
+                        <li key={index} className={`desktop:w-[30%] h-full flex flex-col p-6  ${service.primary ? '-mt-4 bg-[#01D6A3]' : ''} shadow-xl snap-end`}>
 
-                                    <div className="w-full text-center">
-                                        <h5 className={`${service.primary ? 'text-white' : 'text-[#636B6E]'}`}>{service.description}</h5>
+                            <div className="mb-4 text-center">
+                                <h3 className="text-2xl text-pretty font-black text-[#033b4a]">{service.name}</h3>
+                                <span className="flex flex-col text-xl">
+                                    <p className={`w-[200px] text-center mt-6 text-sm ${service.primary ? 'text-white' : 'text-[#636B6E]'} font-medium`}>a partir de</p>
+                                    <p className={`mt-2 text-4xl font-black text-[#01D6A3] ${service.primary ? 'text-white' : 'text-[#01D6A3]'}`}>{service.price}</p>
+                                </span>
+                            </div>
 
-                                        <ul className="w-full mx-auto mt-4 p-4 flex flex-col gap-4 text-left list-disc">
-                                            {service.features.map((feature, index) => {
-                                                return (
-                                                    <li key={index} className={`${service.primary ? 'text-white' : 'text-[#636B6E]'} font-medium text-pretty`}>{feature}</li>
-                                                )
-                                            })}
-                                        </ul>
-                                    </div>
+                            <hr className="my-8" />
 
-                                    <button className={`w-60 mx-auto mt-6 p-4 font-medium transition-all ${service.primary ? 'bg-[#033b4a] text-white  hover:bg-[#033b4a] hover:text-[#01D6A3] hover:shadow-[10px_10px_1px_#fff]' : 'bg-[#033b4a] text-white  hover:bg-[#033b4a] hover:text-[#01D6A3] hover:shadow-[10px_10px_1px_#01D6A3]'}`}>Saiba Mais</button>
+                            <div className="w-full text-center">
+                                <h5 className={`${service.primary ? 'text-white' : 'text-[#636B6E]'}`}>{service.description}</h5>
 
-                                </li>
-                            </SwiperSlide>
-                        )
-                    })}
-                </Swiper>
+                                <ul className="w-full mx-auto mt-4 p-4 flex flex-col gap-4 text-left list-disc">
+                                    {service.features.map((feature, index) => {
+                                        return (
+                                            <li key={index} className={`${service.primary ? 'text-white' : 'text-[#636B6E]'} font-medium text-pretty`}>{feature}</li>
+                                        )
+                                    })}
+                                </ul>
+                            </div>
+
+                            <button className={`w-60 mx-auto mt-6 p-4 font-medium transition-all ${service.primary ? 'bg-[#033b4a] text-white  hover:bg-[#033b4a] hover:text-[#01D6A3] hover:shadow-[10px_10px_1px_#fff]' : 'bg-[#033b4a] text-white  hover:bg-[#033b4a] hover:text-[#01D6A3] hover:shadow-[10px_10px_1px_#01D6A3]'}`}>Saiba Mais</button>
+
+                        </li>
+
+                    )
+                })}
+                <span className="w-full flex justify-end">
+                    <Link className="mr-16 text-[#01D6A3] transition-all hover:text-[#033b4a]" href="#">Para mais serviços →</Link>
+                </span>
             </ul>
         </section>
     );
