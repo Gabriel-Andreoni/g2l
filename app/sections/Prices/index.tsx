@@ -53,7 +53,7 @@ export function Prices() {
                 <h2 className="text-4xl font-black text-[#033b4a]">Investimento que Impulsiona o Seu Sucesso</h2>
             </div>
 
-            <ul className="w-full h-screen my-8 flex flex-wrap gap-8 desktop:flex-row mobile:flex-col justify-start items-center">
+            <ul className="w-full h-screen my-8 flex desktop:flex-wrap mobile:flex-nowrap gap-8 desktop:flex-row mobile:flex-col justify-start items-center">
 
                 {services.map((service, index) => {
                     return (
