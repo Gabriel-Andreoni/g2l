@@ -89,7 +89,7 @@ export default function Prices() {
                     )
                 })}
                 <span className="w-full flex justify-end">
-                    <Link className="mt-2 mr-16 text-[#01D6A3] transition-all hover:text-[#033b4a]" href="#">Para mais serviços →</Link>
+                    <Link className="mt-2 desktop:mr-16 mobile:mr-2 text-[#01D6A3] transition-all hover:text-[#033b4a]" href="#">Para mais serviços →</Link>
                 </span>
             </ul>
         </section>
