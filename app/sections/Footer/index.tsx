@@ -8,7 +8,7 @@ import EmailIcon from './img/email.png';
 
 export default function Footer() {
     return (
-        <section className="w-full h-auto desktop:mt-10 py-20 mobile:p-4 flex mobile:flex-wrap justify-center items-start bg-[#033b4a]">
+        <section className="w-full h-auto desktop:mt-10 py-20 mobile:p-4 flex mobile:flex-col justify-center items-start bg-[#033b4a]">
             <div className="desktop:w-[30%] mobile:w-full mobile:py-12">
                 <Image src={Logo} alt="Logo em empresa G2L" width="150" height='150' />
             </div>
@@ -62,7 +62,7 @@ export default function Footer() {
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14720.251256647203!2d-47.63321423972503!3d-22.72590654873897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c631b0ffcd3e87%3A0x7e234a0f13c70ac0!2sTv.%20Gilberto%20Amado%2C%2042%20-%20Vila%20Monteiro%2C%20Piracicaba%20-%20SP%2C%2013418-415!5e0!3m2!1spt-PT!2sbr!4v1735843085605!5m2!1spt-PT!2sbr"
                             width="100%"
                             height="100%"
-                            className="mobile:w-full mt-4 border-none"
+                            className="mt-4 border-none"
                             allowFullScreen
                         />
                 </ul>
