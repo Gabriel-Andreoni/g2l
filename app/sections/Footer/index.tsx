@@ -8,7 +8,7 @@ import EmailIcon from './img/email.png';
 
 export default function Footer() {
     return (
-        <section className="w-full h-auto mt-10 py-20 flex justify-center items-start bg-[#033b4a]">
+        <section className="w-full h-auto desktop:mt-10 mobile:mt-96 py-20 flex desktop:flex-row mobile:flex-col justify-center items-start bg-[#033b4a]">
             <div className="w-[30%]">
                 <Image src={Logo} alt="Logo em empresa G2L" width="150" height='150' />
             </div>
