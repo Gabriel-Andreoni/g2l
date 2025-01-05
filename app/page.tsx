@@ -29,7 +29,7 @@ export const metadata:Metadata = {
     description: "Desenvolvimento de sites e aplicativos para empresas e profissionais liberais. Criação de sites, lojas virtuais e aplicativos para Android e iOS.",
     images: [
       {
-        url: "https://g2l.tech/public/g2l-logo.png",
+        url: "https://g2l.tech/g2l-logo.png",
         width: 1200,
         height: 630,
         alt: "Imagem de capa do site G2L - Desenvolvimento de Sites e Aplicativos",
