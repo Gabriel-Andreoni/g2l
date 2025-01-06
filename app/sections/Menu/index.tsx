@@ -35,7 +35,9 @@ export default function Menu() {
 
                 <button className="mx-8 p-4 bg-[#01D6A3] text-white font-medium text-sm  transition-all hover:bg-[#033b4a] hover:text-[#01D6A3] hover:shadow-[10px_10px_1px_#01D6A3] mobile:hidden laptop:block desktop:block ultra-wide:block
                 
-                ">Entre em contato</button>
+                ">
+                    <Link href="mailto:g2l.clients@gmail.com?subject=Orçamento&body=Olá,%20gostaria%20de%20solicitar%20um%20orçamento.">Realize um orçamento</Link>
+                </button>
             </div>
             <Image className="pointer desktop:hidden ultra-wide:hidden" src={MenuImage} alt="ícone de um hamburguer que sinaliza o menu do site" width="80" height='80' onClick={() => setIsActive((prevState) => !prevState)} />
         </header>

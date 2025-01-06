@@ -4,6 +4,7 @@ import cardImage2 from './img/services-card-image-2.png';
 import cardImage3 from './img/services-card-image-3.png';
 import cardImage4 from './img/services-card-image-4.png';
 import cardImage5 from './img/services-card-image-5.png';
+import Link from "next/link";
 
 
 export default function Services() {
@@ -70,7 +71,9 @@ export default function Services() {
                     </div>
 
                     <div className="desktop:w-1/4 mobile:w-full p-3 flex justify-center items-center">
-                        <button className="w-4/5 p-6 bg-[#01D6A3] text-white z-50 font-[500] transition-all hover:bg-[#033b4a] hover:text-[#01D6A3] hover:shadow-[10px_10px_1px_#01D6A3]">Entre em contato</button>
+                        <button className="w-4/5 p-6 bg-[#01D6A3] text-white z-50 font-[500] transition-all hover:bg-[#033b4a] hover:text-[#01D6A3] hover:shadow-[10px_10px_1px_#01D6A3]">
+                            <Link href="mailto:g2l.clients@gmail.com?subject=Orçamento&body=Olá,%20gostaria%20de%20solicitar%20um%20orçamento.">Realize um orçamento</Link>
+                        </button>
                     </div>
                 </div>
             </div>
