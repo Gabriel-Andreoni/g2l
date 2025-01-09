@@ -6,6 +6,7 @@ interface PriceProps {
     description: string,
     features: Array<string>,
     primary?: boolean,
+    emailLink: string,
 }
 
 const services: PriceProps[] = [
@@ -18,6 +19,7 @@ const services: PriceProps[] = [
             'Integração com APIs e funcionalidades avançadas.',
             'Suporte inicial após o lançamento.'
         ],
+        emailLink: 'mailto:g2l.clients@gmail.com?subject=Orçamento&body=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20um%20aplicativo%20de%20celular.',
     },
 
     {
@@ -30,6 +32,7 @@ const services: PriceProps[] = [
             'Integração com ferramentas como Google Analytics',
         ],
         primary: true,
+        emailLink: 'mailto:g2l.clients@gmail.com?subject=Orçamento&body=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20um%20site%20personalizado.'
     },
 
     {
@@ -40,7 +43,8 @@ const services: PriceProps[] = [
             'Templates otimizados para SEO e compatíveis com dispositivos móveis.',
             'Ferramentas de fácil gerenciamento para atualizações do site.',
             'Opção de blogs, lojas virtuais ou portfólios.'
-        ]
+        ],
+        emailLink: 'mailto:g2l.clients@gmail.com?subject=Orçamento&body=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20um%20site%20WordPress.'
     },
 ];
 
@@ -82,14 +86,17 @@ export default function Prices() {
                                 </ul>
                             </div>
 
-                            <button className={`w-60 mx-auto mt-6 p-4 font-medium transition-all ${service.primary ? 'bg-[#033b4a] text-white  hover:bg-[#033b4a] hover:text-[#01D6A3] hover:shadow-[10px_10px_1px_#fff]' : 'bg-[#033b4a] text-white  hover:bg-[#033b4a] hover:text-[#01D6A3] hover:shadow-[10px_10px_1px_#01D6A3]'}`}>Saiba Mais</button>
+                            <button className={`w-60 mx-auto mt-6 p-4 font-medium transition-all ${service.primary ? 'bg-[#033b4a] text-white  hover:bg-[#033b4a] hover:text-[#01D6A3] hover:shadow-[10px_10px_1px_#fff]' : 'bg-[#033b4a] text-white  hover:bg-[#033b4a] hover:text-[#01D6A3] hover:shadow-[10px_10px_1px_#01D6A3]'}`}>
+                                <Link href={service.emailLink}>Saiba mais</Link>
+                            </button>
 
                         </li>
 
                     )
                 })}
                 <span className="w-full flex justify-end">
-                    <Link className="mt-2 desktop:mr-16 mobile:mr-2 text-[#01D6A3] transition-all hover:text-[#033b4a]" href="#">Para mais serviços →</Link>
+                    <Link className="mt-2 desktop:mr-16 mobile:mr-2 text-[#01D6A3] transition-all hover:text-[#033b4a]" href="mailto:g2l.clients@gmail.com?subject=Orçamento&body=Olá,%20gostaria%20de%20solicitar%20um%20orçamento.
+">Para mais serviços →</Link>
                 </span>
             </ul>
         </section>
