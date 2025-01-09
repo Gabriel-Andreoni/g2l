@@ -51,7 +51,7 @@ const services: PriceProps[] = [
 
 export default function Prices() {
     return (
-        <section className="flex flex-col items-center justify-center h-auto p-4">
+        <section className="flex flex-col items-center justify-center h-auto p-4" id="prices">
             <div className="mb-12 text-center">
                 <h1 className="text-2xl font-black text-[#01D6A3]">Nossos Preços</h1>
                 <h2 className="text-4xl font-black text-[#033b4a]">Investimento que Impulsiona o Seu Sucesso</h2>

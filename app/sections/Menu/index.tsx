@@ -24,11 +24,21 @@ export default function Menu() {
                 <nav className={`menu-container mx-auto mobile:hidden tablet:block desktop:block ultra-wide:block ${isActive ? 'active' : ''}`}>
                     <div className="w-[500px] h-full ml-auto">
                         <ul className="w-full h-full flex items-center desktop:justify-center mobile:items-start list-none">
-                            <li className="mx-7 text-slate-950 font-medium text-md cursor-pointer transition-all hover:text-[#01D6A3]">Home</li>
-                            <li className="mx-7 text-slate-950 font-medium text-md cursor-pointer transition-all hover:text-[#01D6A3]">Sobre</li>
-                            <li className="mx-7 text-slate-950 font-medium text-md cursor-pointer transition-all hover:text-[#01D6A3]">Serviços</li>
-                            <li className="mx-7 text-slate-950 font-medium text-md cursor-pointer transition-all hover:text-[#01D6A3]">Preços</li>
-                            <li className="mx-7 text-slate-950 font-medium text-md cursor-pointer transition-all hover:text-[#01D6A3]">Contato</li>
+                            <li className="mx-7 text-slate-950 font-medium text-md cursor-pointer transition-all hover:text-[#01D6A3]">
+                                <Link href="#hero">Home</Link>
+                            </li>
+                            <li className="mx-7 text-slate-950 font-medium text-md cursor-pointer transition-all hover:text-[#01D6A3]">
+                                <Link href="#about">Sobre</Link>
+                            </li>
+                            <li className="mx-7 text-slate-950 font-medium text-md cursor-pointer transition-all hover:text-[#01D6A3]">
+                                <Link href="#services">Serviços</Link>
+                            </li>
+                            <li className="mx-7 text-slate-950 font-medium text-md cursor-pointer transition-all hover:text-[#01D6A3]">
+                                <Link href="#prices">Preços</Link>
+                            </li>
+                            <li className="mx-7 text-slate-950 font-medium text-md cursor-pointer transition-all hover:text-[#01D6A3]">
+                                <Link href="#contact">Contato</Link>
+                            </li>
                         </ul>
                     </div>
                 </nav>

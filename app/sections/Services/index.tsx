@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export default function Services() {
     return (
-        <section className="w-full h-auto">
+        <section className="w-full h-auto" id="services">
             <div className="max-w-7xl h-full mx-auto py-28 flex flex-col gap-4">
                 <div className="w-full flex desktop:flex-row mobile:flex-col">
                     <div className="desktop:w-3/6 mobile:w-full p-4 flex flex-col items-start justify-center">

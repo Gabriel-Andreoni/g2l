@@ -6,7 +6,7 @@ import AboutIcon2 from './img/about-icon-2.png';
 
 export default function About() {
     return (
-        <section className="w-full h-auto desktop:mb-0 mobile:mb-8 p-4 relative after:content-[''] after:w-4/12 desktop:after:h-full mobile:after:h-2/6 after:block after:absolute after:top-0 after:left-0 after:bg-[#01D6A3] after:z-[1] ">
+        <section className="w-full h-auto desktop:mb-0 mobile:mb-8 p-4 relative after:content-[''] after:w-4/12 desktop:after:h-full mobile:after:h-2/6 after:block after:absolute after:top-0 after:left-0 after:bg-[#01D6A3] after:z-[1]" id="about">
             <div className="w-full desktop:py-14 mobile:py-0 flex desktop:flex-row mobile:flex-col z-10 relative">
                 <div className="desktop:w-3/6 mobile:w-full desktop:mt-0 mobile:mt-4 flex justify-center items-start">
                     <Image src={AboutImage} alt="imagem de um escritório" width="620" height="490" />
