@@ -33,7 +33,7 @@ export default function Testimonial() {
                     </div>
                 </div>
 
-                <div className="desktop:w-3/6 mobile:w-full relative desktop:order-[0] mobile:order-[-1] after:content-[''] after:w-full desktop:after:h-[350px] mobile:after:h-[200px] after:block after:absolute after:top-0 after:bg-[#01D6A3] after:opacity-20">
+                <div className="desktop:w-3/6 mobile:w-full relative desktop:order-[0] mobile:order-[-1] after:content-[''] after:w-full desktop:after:h-[350px] mobile:after:h-[215px] after:block after:absolute after:top-0 after:bg-[#01D6A3] after:opacity-20">
                     <Image src={TestimonialsCover} alt="imagem de uma pessoa com um tablet na mão escrevendo um testemunho" />
                 </div>
             </div>
